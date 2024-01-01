@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Insight Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(45deg, blue, red); /* gradient background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            font-size: 14px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Insight Engine</h1>
+        <p>Upload your resume to extract information.</p>
+        <form action="/get-insights" method="post" enctype="multipart/form-data">
+            <input type="file" id="resume" name="resume" required>
+            <button type="submit" class="button">Get Insights</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Resume Insight Engine. All rights reserved.</p>
+    </footer>
+</body>
+</html>
