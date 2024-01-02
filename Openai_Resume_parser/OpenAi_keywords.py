@@ -15,7 +15,7 @@ page = reader.pages[0]
 text= page.extract_text()
 
 
-openai_key = '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'
+openai_key = ' Type your openai key here'
 openai.api_key = openai_key
 
 def extract_data(text):
